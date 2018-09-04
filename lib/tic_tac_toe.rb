@@ -22,6 +22,10 @@ end
 def input_to_index(input)
     input.to_i - 1
 end
+
+def player_token
+  player_token = "X" || "O"
+end
 # player moves
 def move(board, index, player_token)
   board[index] = player_token
