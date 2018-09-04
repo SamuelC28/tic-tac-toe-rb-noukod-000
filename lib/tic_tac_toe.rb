@@ -132,4 +132,4 @@ def full?(board)
      else draw?(board)
      puts "it has been a draw!"
    end
-   end 
+   end
