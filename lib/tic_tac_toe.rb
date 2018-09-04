@@ -121,7 +121,7 @@ def full?(board)
      input = gets
      until over?(board)
      turn(board)
-   end 
+   end
      if won?(board)
      winner(board) == "X" || winner(board) == "O"
        puts "Congratulations #{winner(board)}!"
