@@ -98,3 +98,15 @@ def won?(board)
     end
     false
   end
+# return true if the board is filled
+def full?(board)
+    if board.all? {|i| i == "X" || i == "O"}
+      return true
+    end
+  end
+# return true when the board is full but no winners
+  def draw?(board)
+   if !won?(board) && full?(board)
+     return true
+   end 
+ end
